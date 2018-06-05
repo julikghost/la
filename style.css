@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face
+{
+	font-family:Brandon;
+	src:url('fonts/Brandon.otf')
+} /*шрифты*/
+/*размеры для текста*/
+body{
+    font-family: Brandon;
+}
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-inline{
+  display: -webkit-inline-flex;
+  display: inline-flex;
+
+}
+.wrap{
+  width:70%;
+  margin: 0 auto;
+}
+/*распологает контент с учетом полей*/
+.main{
+background-image:url(images/bg/Escape.jpg);
+background-size:cover; 
+width: 100%;
+padding: 44px 0 125px;
+justify-content: space-between;
+}
+
+.menu {
+  justify-content: space-between;
+ margin-bottom: 150px;
+  }
+.menu img{
+    width: 147px;
+}
+.menu  nav{
+  justify-content: space-around;
+ }
+.menu a{ 
+  font-size: 18px;
+  color:#fff;
+  text-decoration: none;
+  text-align: center;
+  padding:0px 14px 0 14px;
+}
+.home{
+  align-items: center;
+  flex-direction: column;
+ color:#fff;
+}
+.home p {
+font-size: 32px;
+margin-bottom: 50px;
+} /*абзац*/
+.home h1{
+font-size: 66px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 80px;
+} /*заголовок*/
+.home a {
+width:100%;
+max-width:234px;
+text-decoration:none;
+font-size: 23px;
+font-weight: bold;
+color:#fff;
+text-align: center;
+border:3px solid #fff;
+border-radius: 2%;
+padding:19px 58px  21px 58px;
+}/*кнопка*/
+.white,  .skills{
+  background-color:#fff;
+    } /*задаем фон  для дива вайт и скилс*/
+  .grey, .clients {
+background-color:#fafafa;
+}/*задаем фон  для дива грей*/
+.white , .grey , .skills , .clients , .black , .blue {
+padding: 100px 0 100px 0;
+}/* основные свойства для блоков ,грей и скилс и т .д общие для блоков, c учетом полей*/
+.white .flex-container {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.grey .flex-container{
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.white article, .grey article{
+  max-width: 560px;
+   }
+   .white .fork{
+    max-width: 260px;S
+   }
+.white h2, .grey h2{
+    font-size: 60px;
+    color:#000;
+    margin-bottom: 50px;
+}
+.white h2 span, .grey h2 span, .clients h2 span, .black h2 span, .blue h2 span{
+font-weight: 900;
+}
+.white p, .grey p,  .black p {
+font-size: 17px; 
+color: rgb(119, 119, 119);
+line-height: 1.333;
+/*общие свойства для абзацев блоков вайт и грей*/
+}
+.white p:first-of-type, .grey p:first-of-type{
+  margin-bottom: 50px;
+}
+.skills .flex-container{
+ justify-content: space-around;
+}
+.skills ul{
+ list-style-type: none;
+text-align: left;
+     }
+.list1 li,.list2 li{  
+     max-width: 385px;
+    }
+ 
+.list1 li:nth-child(1){
+background: url(images/ico/ico1.png) no-repeat left top;
+background-size: 75px 75px;
+padding: 0 0 0 90px; /* Бэкграунд+ отступ до текста*/
+}
+.list1 li:nth-child(2){
+background: url(images/ico/ico2.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.list1 li:nth-child(3){
+background: url(images/ico/ico3.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.list2 li:nth-child(1){
+background: url(images/ico/ico4.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.list2 li:nth-child(2){
+background: url(images/ico/ico5.png) no-repeat left top;
+padding: 0 0 0 90px;
+}
+.list2 li:nth-child(3){
+background: url(images/ico/ico6.png)  no-repeat left top;
+padding: 0 0 0 90px;
+}
+.skills  h2{
+font-size: 22px;
+margin-bottom: 10px;
+ }
+
+.skills li p{
+   font-size: 18px;
+  color: rgb(119, 119, 119);
+  line-height: 1;
+  margin-bottom: 55px;
+  }
+
+.skills li:nth-child(3) p{
+   font-size: 18px;
+  color: rgb(119, 119, 119);
+  line-height: 1;
+   }
+ .clients .flex-container{
+flex-wrap: wrap;
+flex-direction: column;
+ }  
+.clients h2 , .clients p{
+  text-align: center;
+}
+.clients h2{
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.clients p.see{
+  font-size: 22px;
+  color: rgb(119, 119, 119);
+margin-bottom: 40px;
+}
+.man_1, .man_2{
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+ }
+ .man_1 img, .man_2 img{
+  max-width: 260px;
+ }
+.man_1 q, .man_2 q{
+  font-size: 26px;
+ color: rgb(119, 119, 119);
+  line-height: 1.1;
+  text-align: center;
+  quotes:"\201c" "\201d";
+  }
+  p.author{
+  font-size: 20px;
+   color: rgb(118, 144, 197);
+  line-height: 1.8;
+  text-align: center;
+}
+.man_1{
+   margin-bottom: 50px;
+}
+.man_1 article, .man_2 article /* ттутучка*/{
+   justify-content: center;
+   align-items: center;
+flex-direction: column;
+flex--wrap:wrap;
+min-height: 170px;
+position: relative;
+ padding: 30px 0 40px 0;
+     background-color: #fff;
+  border: 2px solid #f1f1f1;
+  box-shadow: 2px 2px 4px #888;
+}
+
+.man_1 article::before , .man_1 article::after{
+    content: ''; 
+    position: absolute;
+    left: -40px;
+    top: 70px;
+   border: 20px solid transparent; 
+   border-right: 20px solid #f1f1f1;
+   }
+ .man_1 article::after {
+    border-right: 20px solid #fff;
+    left: -38px; 
+   } /*треугольник */
+   
+
+.man_2 article::before , .man_2 article::after{
+    content: ''; 
+    position: absolute;
+    right: -40px;
+    top: 70px;
+   border: 20px solid transparent; 
+   border-left: 20px solid #f1f1f1;
+   }
+ .man_2 article::after {
+    border-left: 20px solid #fff;
+    right: -38px; 
+   }
+
+.logos {
+padding: 60px 0  60px 0;
+text-align: center;
+ }
+ .logos ul{
+  list-style-type: none;
+ }
+.logos li{
+    margin-left:40px;
+ }
+.black{
+  background: #111;
+  text-align: center;
+}
+.black .flex-container{
+  
+  flex-direction: column;
+flex-wrap: nowrap;
+ 
+}
+.black h2, .blue h2{  
+    font-size: 60px;
+    color:#fff;
+    line-height: 1.2; 
+}
+.black h2{
+  margin-bottom: 18px;
+}
+.black p.up{
+  margin-bottom: 60px;
+}
+.black i {
+  color:#fff;
+  border:3px solid #fff;
+  border-radius: 50% 50%;
+  padding: 10px 10px 10px 10px;
+}
+.black  .fa-facebook{
+   color:#fff;
+  border:3px solid #fff;
+  border-radius: 50% 50%;
+  padding: 10px 12px 10px 12px;
+}
+.gallery ul
+{
+list-style-type: none;
+  margin-bottom: 45px;
+}
+.gallery .flex-inline
+{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.gallery p, .gallery h3{
+   color:#fff;
+    margin-bottom:13px;
+}
+.gallery h3{
+  font-weight: 900;
+}
+ .down {
+ color: rgb(187, 187, 187);
+}
+.blue {
+  background:#7690c5;
+}
+.blue .flex-container{
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.blue .flex-inline{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+ max-width:430px;
+}
+ .blue h2{
+  margin-bottom: 30px;
+}
+.blue .social p{
+  color:#fff;
+  margin-bottom: 50px;
+}
+.social, .form{
+  width: 50%;
+}
+.social li
+{
+ max-width:430px;
+ width: 50%;
+   margin-bottom: 40px;
+}
+.social a 
+{
+  text-decoration: none;
+  color:#fff;
+  }
+.social i{
+  margin-right: 14px;
+  font-size: 30px;
+}
+.form{
+   text-align: left;
+}
+
+.form input, .form textarea{
+
+width:100%;
+max-width: 458px;
+border-radius: 2%;
+}
+/* растояние между полями*/
+.form input {
+min-height:50px;
+} 
+.form input[type="text"]{
+  margin-bottom: 29px;
+}
+.form input[type="email"]{
+  margin-bottom: 20px;
+}
+.form textarea
+{
+min-height:210px;
+resize: none; /* не меняет размер поля  */
+} 
+.form input[type="text"]::placeholder, .form input[type="email"]::placeholder, .form textarea::placeholder
+{
+
+font-size: 18px;
+line-height: 1.2;
+color: rgb(187, 187, 187);
+text-align: left;
+padding:16px 0  0 18px;/*отступ текста от края формы */
+  }
+
+.footer  {
+padding: 30px 0 33px 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.footer .flex-container{
+   flex-direction: column;
+  flex-wrap: wrap;
+}
+.hr{
+ color:#87a0d2;/* почему-то пропала hr*/
+ height: 2px;
+  margin-bottom: 30px;
+}
